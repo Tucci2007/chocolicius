@@ -1,0 +1,45 @@
+Vas a actuar como experto creador de landing pages. Te estoy proporcionando dos documentos: uno con las mejores prácticas para crear una landing de servicios, y otro con la investigación de mercado. Con esto, crea una landing page que convierta para mi servicio. Hazme todas las preguntas necesarias para personalizarla. Crea una página web usando HTML, CSS, JavaScript. Usa Bootstrap para que sea responsiva. Te adjunto un documento con todas las secciones y textos de la landing. Utiliza las imágenes proporcionadas. Los colores base son: rosa y dorado (puedes utilizar cualquiera de los últimos dos mencionados para crear). Donde va a ir el logo utilizarás la imagen (logo) quiero que abajo o a un costado esté la siguiente frase con el tipo de fuente Serif, con un tamaño apropiado (ni muy chico ni grande). Cuando crees el menú necesito que en él estén las siguientes opciones: productos, servicios, talleres, nuestra historia, Contacto.
+•	En la sección Productos agregarás las siguientes imágenes y además agregaras un texto breve a cada imagen, puede ser arriba, abajo o a un costado de la imagen, la imagen la escribo en la primera columna así, pero es el nombre como esta adjuntada. Con la misma fuente (Serif), esto será la descripción del producto. Por último, mencionarás el precio que esta en la tercera columna junto a la descripción: 
+alfajor_boda	Alfajores de chocolate con dulce de leche y crocante de maní, con una decoración a elección en chocolate.	$6000 la media docena
+corazón_piñata_navidad	Torta piñata: Bases de chocolates rellena de golosinas con diseño personalizado.	$35000
+corazones	Bouquet de bombones: Lapicero/ maceta impresa en 3D con flores artificiales y 5 o 6 bombones rellenos.	$11500
+corazones_happy	Bloque de 27 bombones rellenos para cumpleaños u ocasiones especiales.	$37000
+corazones_souveniers	Bombones abiertos: 
+Base de chocolate rellenos con chocolinas, crema Block y crema Bon o bon con decoración a elección por 12 unidades.	$11000
+
+frutillas_chocolate	Box de 10 frutillas + 3 chocolatines.	$10000
+huevo_rasta	Contiene una base de chocolate negro, relleno de bizcochuelo de chocolate, dulce de leche y trocitos de chocolate blanco. Decorado con dulce de leche, chocolate y trozos de alfajor Rasta.	$20000
+frutillas_huevitos	Bowl de cerámica con 8 frutillas bañadas en chocolate + 12 bombones con frutos secos y pétalos de rosa.	 $18000
+huevitos_cereales	Box de 15 bombones rellenos expuestos.	 $8500
+pelota_AFA	Torta piñata: Bases de chocolates rellena de golosinas con diseño personalizado.	$37000
+souveniers_80’	Alfajores oreo para souvenirs.	$1200 c/u consultar x mayor
+tabla_dia_del_padre	Tabla dulce:
+3 alfajores de chocolate, 3 bombones expuestos, 6 bombones, 6 medallas de chocolate con frutos secos y 2 medallas de chocolate con frase personalizada	$19000
+tabletitas	Paletas souvenir 
+decoración a elección. Base de chocolate rellenas con vainillas y dulce de leche	$1500 c/u consultar por mayor
+
+               
+ 
+ 	                                                                      
+
+•	En la sección Servicios, agregaras los tipos de servicios que ofrece Chocolicius; mostrarás un video que consta de 21 segundos (video_chocomovil) de un tamaño que no opaque a las siguientes imágenes y descripciones, pero quiero que esté al principio. Mostraras más abajo los dos servicios que ofrece: chocomovil y fuente de chocolate; a estos títulos los pondrás con una fuente (Serif) de un tamaño más grande a la descripción que te brindare luego. Títulos: “Chocomovil”
+“Cascada de chocolate”
+Pondrás la imagen de la cascada (fuente_de_chocolate) con la siguiente descripción: “Nuestra cascada de chocolate incluye el asesoramiento al cliente, el montaje y el mantenimiento a la hora del evento. También incluye una amplia variedad de sabores como lo son frutillas, banana, kiwi, malvaviscos, oreos, cubanitos, obleas, mini donas, turrones de arroz y merenguitos. Para servirse incluye vasos de poli papel con frases chocolatosas y palillos de brocheta. 
+
+ ¡El precio ronda entre los $170000 para 30 a 40 personas, este puede variar según la cantidad de invitados que tengas!” Quiero que los precios ($170000) resalten de otra manera, con un color dorado.
+               Para el otro servicio, chocomovil, colocarás la imagen (choco_movil) y pondrás la siguiente descripción: “Contamos con el servicio de un stand de mini donas para tu evento. El mismo cuenta con salsas (chocolate, dulce de leche y caramelo) y toppings (oreos, bombones de banana, chips de chocolate, chocolinas, granas, gomitas, rocklets, malvaviscos y crocante de maní) entregándole al invitado dos minis donas con la posibilidad de que elija que toppings agregarle. 
+ ¿Cómo contratar el servicio? 
+ Para adquirir este servicio en tu evento, podes comunicarte con nosotros para asesorarte según la cantidad de invitados que tengas y tus gustos. Coordinamos la fecha y el horario en el que debemos asistir y lo atendemos durante 1 hora 30 min o 2 horas aproximadamente. En caso que sobren productos, lo servimos en la mesa de tus invitados.
+Este servicio ronda entre los $220000 para 100 invitados, $270000 para 150 invitados y $320000 para 200 invitados.”
+Los precios ($220000, $270000, $320000) quiero que tenga una animación con movimiento y de color dorado. Necesito que la organización sea de la siguiente manera: primero el video, luego del lado izquierdo la cascada de chocolate con sus respectiva imagen y descripción. Por el lado derecho colocarás el chocomovil con su imagen y descripción. 
+•	En la /sección Talleres, en esta sección pondrás los talleres que hacen con la siguiente descripción: “Realizamos talleres para niños de 3 a 12 años con el objetivo de impulsarlos a crear, desarrollar nuevas habilidades y enamorarse del chocolate. Hoy en día tenemos 2 alumnos de 9 y 12 años que emprenden con lo que han aprendido en dichos talleres. 
+ Por lo general se realizan los días sábados, en un salón de fiestas de nuestra localidad. Requiere una inversión de $24000. 
+ ¡Nuestros talleres incluyen todos los materiales y la diversión asegurada! Los niños comparten un desayuno y aprenden a dibujar sobre el chocolate, decoramos wafles y mini donas, bañamos frutillas en chocolate, realizamos chupetines y alfajores. Las creaciones pueden variar según el objetivo del taller al igual que la temática.
+ ¡Es una mañana a puro chocolate, música y sorpresas!”. Acomoda la imagen (vicki_chamba y vicki_chamba_halloween) junto a la descripción sin que se superpongan las imágenes de la descripción 
+•	En la /sección Nuestra historia, quiero que coloques los siguientes textos con la fuente Serif, que no sea muy grande y que acomodes a tu manera las siguientes imágenes: 
+“CHOCOLICIUS es más que un emprendimiento, es una historia de amor, perseverancia y sueños que comenzó en 2019, cuando con tan solo 11 años inicié este camino para juntar dinero para mi viaje de estudio. Lo que empezó como pequeños bombones elaborados junto a mi mamá, con cajitas de cartulina dorada hechas a mano y un corazón lleno de ilusión, se transformó en una pasión que fue creciendo con cada creación. 
+En 2023, a los 14 años, nació una nueva etapa, los talleres de chocolate para niños. Mi objetivo era compartir ese amor profundo por el chocolate y abrir para ellos una puerta hacia el arte y la imaginación sin límites.
+Sin embargo, también en 2023 la vida me presentó un gran desafío, mi diagnóstico de diabetes. Fue un cambio doloroso y difícil, que al inicio trajo lágrimas y negación. Nada de lo que encontraba en las confiterías era apto para mí, y esa frustración encendió en mí una nueva misión; crear opciones dulces y deliciosas que también fueran saludables. Así nacieron mis propuestas bajas en azúcar; bombones, donas integrales con chocolate, trufas y más, todas elaboradas con amor y dedicación, pensadas para que nadie se quede sin disfrutar de un momento dulce.
+Hoy, CHOCOLICIUS es el reflejo de un sueño que sigue creciendo, de la resiliencia frente a los desafíos y de la certeza de que el chocolate no solo endulza el paladar, sino también el alma. Cada producto lleva detrás una historia de amor, esfuerzo y esperanza, con el deseo de compartir con cada persona la magia de un bocado inolvidable.” Coloca de manera dispersa las siguientes imágenes que van adjuntas: (certificado, primer_taller, primeros_huevitos).
+•	/En la sección Contacto, tendrás que agregar el siguiente número de teléfono: 3544-407216, el Instagram: chcolicius_vd.oficial 
+

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CHOCOLICIUS - Chocolate artesanal hecho con amor en Villa Dolores, Córdoba">
+    <meta name="keywords" content="chocolate, bombones, frutillas, talleres, servicios">
+    <title>CHOCOLICIUS - Chocolate Artesanal Hecho con Amor</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- ============================================
+         HEADER
+         ============================================ -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo-section">
+                    <div class="logo-text">
+                        <h1>CHOCOLICIUS</h1>
+                        <p>Hecho con amor</p>
+                    </div>
+                </div>
+
+                <!-- Navegación Desktop -->
+                <nav>
+                    <a href="#productos">Productos</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#talleres">Talleres</a>
+                    <a href="#historia">Nuestra Historia</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+
+                <!-- Carrito y Menú Mobile -->
+                <div class="header-actions">
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                </div>
+            </div>
+
+            <!-- Menú Mobile -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#productos">Productos</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#talleres">Talleres</a>
+                <a href="#historia">Nuestra Historia</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+    </header>
+    <!-- ============================================
+         HERO SECTION CON VIDEO DE FONDO
+         ============================================ -->
+    <section class="hero" id="hero-video">
+        <video autoplay muted loop class="hero-video-bg" id="heroVideoBg">
+            <source src="pasted_file_PyA8GM_video_chocomovil.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+        <img src="logo2.0.jpg" alt="CHOCOLICIUS Logo" style="width: 250px; height: auto;">
+            <h1>CHOCOLICIUS</h1>
+            <p>Chocolate Artesanal Hecho con Amor</p>
+            <p style="font-size: 1.1rem; color: rgb(247, 242, 242);">Descubre nuestros productos premium, servicios especiales y talleres para niños. Cada bocado es una historia de pasión y dedicación.</p>
+            <div class="hero-buttons">
+                <a href="#productos" class="btn btn-primary">Ver Productos</a>
+                <a href="#contacto" class="btn btn-secondary">Contactanos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECCIÓN PRODUCTOS
+         ============================================ -->
+    <section id="productos" class="section-light">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="productos-grid">
+                <!-- Producto 1 -->
+                <div class="producto-card">
+                    <img src="pasted_file_eIYEry_alfajor_boda.jpg" alt="Alfajores de Boda">
+                    <div class="producto-info">
+                        <h3>Alfajores de Boda</h3>
+                        <p>Alfajores de chocolate con dulce de leche y crocante de maní, con una decoración a elección en chocolate.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$6000 la media docena</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="producto-card">
+                    <img src="pasted_file_mer5ca_corazon_piñata_navidad.jpg" alt="Torta Piñata Navidad">
+                    <div class="producto-info">
+                        <h3>Torta Piñata Navidad</h3>
+                        <p>Torta piñata: Bases de chocolates rellena de golosinas con diseño personalizado.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$35000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="producto-card">
+                    <img src="pasted_file_geymih_corazones.jpg" alt="Bouquet de Bombones">
+                    <div class="producto-info">
+                        <h3>Bouquet de Bombones</h3>
+                        <p>Bouquet de bombones: Lapicero/ maceta impresa en 3D con flores artificiales y 5 o 6 bombones rellenos.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$11500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="producto-card">
+                    <img src="pasted_file_C2dmGW_corazones_happy.jpg" alt="Bloque de 27 Bombones">
+                    <div class="producto-info">
+                        <h3>Bloque de 27 Bombones</h3>
+                        <p>Bloque de 27 bombones rellenos para cumpleaños u ocasiones especiales.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$37000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="producto-card">
+                    <img src="pasted_file_ozpbPD_corazones_souveniers.jpg" alt="Bombones Abiertos">
+                    <div class="producto-info">
+                        <h3>Bombones Abiertos</h3>
+                        <p>Base de chocolate rellenos con chocolinas, crema Block y crema Bon o bon con decoración a elección por 12 unidades.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$11000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="producto-card">
+                    <img src="pasted_file_Mrmu6o_frutillas_chocolate.jpg" alt="Box de Frutillas">
+                    <div class="producto-info">
+                        <h3>Box de Frutillas</h3>
+                        <p>Box de 10 frutillas + 3 chocolatines.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$10000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 7 -->
+                <div class="producto-card">
+                    <img src="pasted_file_73rd1e_huevo_rasta.jpg" alt="Huevo Rasta">
+                    <div class="producto-info">
+                        <h3>Huevo Rasta</h3>
+                        <p>Contiene una base de chocolate negro, relleno de bizcochuelo de chocolate, dulce de leche y trocitos de chocolate blanco. Decorado con dulce de leche, chocolate y trozos de alfajor Rasta.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$20000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 8 -->
+                <div class="producto-card">
+                    <img src="pasted_file_pTAg14_frutillas_huevitos.jpg" alt="Bowl de Cerámica">
+                    <div class="producto-info">
+                        <h3>Bowl de Cerámica</h3>
+                        <p>Bowl de cerámica con 8 frutillas bañadas en chocolate + 12 bombones con frutos secos y pétalos de rosa.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$18000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 9 -->
+                <div class="producto-card">
+                    <img src="pasted_file_qYUVoD_huevitos_cereales.jpg" alt="Box de 15 Bombones">
+                    <div class="producto-info">
+                        <h3>Box de 15 Bombones</h3>
+                        <p>Box de 15 bombones rellenos expuestos.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$8500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 10 -->
+                <div class="producto-card">
+                    <img src="pasted_file_iZyqvw_pelota_AFA.jpg" alt="Torta Piñata AFA">
+                    <div class="producto-info">
+                        <h3>Torta Piñata AFA</h3>
+                        <p>Torta piñata: Bases de chocolates rellena de golosinas con diseño personalizado.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$37000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 11 -->
+                <div class="producto-card">
+                    <img src="pasted_file_eKLDFX_souveniers_80'.jpg" alt="Alfajores Oreo Souvenirs">
+                    <div class="producto-info">
+                        <h3>Alfajores Oreo Souvenirs</h3>
+                        <p>Alfajores oreo para souvenirs.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$1200 c/u consultar por mayor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 12 -->
+                <div class="producto-card">
+                    <img src="pasted_file_vNoqvW_tabla_dia_del_padre.jpg" alt="Tabla Dulce Día del Padre">
+                    <div class="producto-info">
+                        <h3>Tabla Dulce Día del Padre</h3>
+                        <p>3 alfajores de chocolate, 3 bombones expuestos, 6 bombones, 6 medallas de chocolate con frutos secos y 2 medallas de chocolate con frase personalizada.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$19000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 13 -->
+                <div class="producto-card">
+                    <img src="pasted_file_7PhvqM_tabletitas.jpg" alt="Paletas Souvenir">
+                    <div class="producto-info">
+                        <h3>Paletas Souvenir</h3>
+                        <p>Paletas souvenir con decoración a elección. Base de chocolate rellenas con vainillas y dulce de leche.</p>
+                        <div class="producto-footer">
+                            <span class="precio">$1500 c/u consultar por mayor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECCIÓN SERVICIOS
+         ============================================ -->
+    <section id="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+
+            <!-- Video -->
+            <div class="video-container">
+                <video controls poster="pasted_file_orNo3o_choco_movil.jpg">
+                    <source src="pasted_file_PyA8GM_video_chocomovil.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+
+            <!-- Servicios -->
+            <div class="servicios-grid">
+                <!-- Cascada de Chocolate -->
+                <div class="servicio-item">
+                    <h3>Cascada de Chocolate</h3>
+                    <img src="pasted_file_U9kYsk_fuente_de_chocolate.jpg" alt="Cascada de Chocolate">
+                    <p>Nuestra cascada de chocolate incluye el asesoramiento al cliente, el montaje y el mantenimiento a la hora del evento. También incluye una amplia variedad de sabores como lo son frutillas, banana, kiwi, malvaviscos, oreos, cubanitos, obleas, mini donas, turrones de arroz y merenguitos. Para servirse incluye vasos de poli papel con frases chocolatosas y palillos de brocheta.</p>
+                    <p>¡El precio ronda entre los <span class="precio">$170000</span> para 30 a 40 personas, este puede variar según la cantidad de invitados que tengas!</p>
+                </div>
+
+                <!-- Chocomóvil -->
+                <div class="servicio-item">
+                    <h3>Chocomóvil</h3>
+                    <img src="pasted_file_orNo3o_choco_movil.jpg" alt="Chocomóvil">
+                    <p>Contamos con el servicio de un stand de mini donas para tu evento. El mismo cuenta con salsas (chocolate, dulce de leche y caramelo) y toppings (oreos, bombones de banana, chips de chocolate, chocolinas, granas, gomitas, rocklets, malvaviscos y crocante de maní) entregándole al invitado dos minis donas con la posibilidad de que elija que toppings agregarle.</p>
+                    <h4 style="color: var(--primary-pink); margin-top: 1rem;">¿Cómo contratar el servicio?</h4>
+                    <p>Para adquirir este servicio en tu evento, podes comunicarte con nosotros para asesorarte según la cantidad de invitados que tengas y tus gustos. Coordinamos la fecha y el horario en el que debemos asistir y lo atendemos durante 1 hora 30 min o 2 horas aproximadamente. En caso que sobren productos, lo servimos en la mesa de tus invitados.</p>
+                    <div class="precios-list">
+                        <p>Este servicio ronda entre:</p>
+                        <p class="precio-animado">$220000 para 100 invitados</p>
+                        <p class="precio-animado">$270000 para 150 invitados</p>
+                        <p class="precio-animado">$320000 para 200 invitados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECCIÓN TALLERES
+         ============================================ -->
+    <section id="talleres" class="section-light">
+        <div class="container">
+            <h2>Talleres de Chocolate</h2>
+            <div class="talleres-content">
+                <div class="talleres-text">
+                    <p>Realizamos talleres para niños de 3 a 12 años con el objetivo de impulsarlos a crear, desarrollar nuevas habilidades y enamorarse del chocolate. Hoy en día tenemos 2 alumnos de 9 y 12 años que emprenden con lo que han aprendido en dichos talleres.</p>
+                    <p>Por lo general se realizan los días sábados, en un salón de fiestas de nuestra localidad. Requiere una inversión de <span class="precio">$24000</span>.</p>
+                    <p>¡Nuestros talleres incluyen todos los materiales y la diversión asegurada! Los niños comparten un desayuno y aprenden a dibujar sobre el chocolate, decoramos wafles y mini donas, bañamos frutillas en chocolate, realizamos chupetines y alfajores. Las creaciones pueden variar según el objetivo del taller al igual que la temática.</p>
+                    <p style="font-size: 1.3rem; color: var(--primary-pink); text-align: center; margin-top: 1.5rem;">¡Es una mañana a puro chocolate, música y sorpresas!</p>
+                </div>
+                <div class="talleres-images">
+                    <img src="pasted_file_T3vIhg_vicki_chamba.jpg" alt="Vicki Chamba en taller">
+                    <img src="pasted_file_izABWi_vicki_chamba_halloween.jpg" alt="Vicki Chamba Halloween">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECCIÓN NUESTRA HISTORIA
+         ============================================ -->
+    <section id="historia">
+        <div class="container">
+            <h2>Nuestra Historia</h2>
+            <div class="historia-content">
+                <img src="pasted_file_Qt7HIt_certificado.jpg" alt="Certificado" class="historia-img historia-img-right">
+                <p><strong style="color: var(--primary-pink); font-size: 1.2rem;">CHOCOLICIUS</strong> es más que un emprendimiento, es una historia de amor, perseverancia y sueños que comenzó en 2019, cuando con tan solo 11 años inicié este camino para juntar dinero para mi viaje de estudio. Lo que empezó como pequeños bombones elaborados junto a mi mamá, con cajitas de cartulina dorada hechas a mano y un corazón lleno de ilusión, se transformó en una pasión que fue creciendo con cada creación.</p>
+
+                <img src="pasted_file_D9Iicp_primer_taller.jpg" alt="Primer Taller" class="historia-img historia-img-left">
+                <p>En 2023, a los 14 años, nació una nueva etapa, los talleres de chocolate para niños. Mi objetivo era compartir ese amor profundo por el chocolate y abrir para ellos una puerta hacia el arte y la imaginación sin límites.</p>
+
+                <p>Sin embargo, también en 2023 la vida me presentó un gran desafío, mi diagnóstico de diabetes. Fue un cambio doloroso y difícil, que al inicio trajo lágrimas y negación. Nada de lo que encontraba en las confiterías era apto para mí, y esa frustración encendió en mí una nueva misión; crear opciones dulces y deliciosas que también fueran saludables. Así nacieron mis propuestas bajas en azúcar; bombones, donas integrales con chocolate, trufas y más, todas elaboradas con amor y dedicación, pensadas para que nadie se quede sin disfrutar de un momento dulce.</p>
+
+                <img src="pasted_file_UFXv6Y_primeros_huevitos.jpg" alt="Primeros Huevitos" class="historia-img historia-img-right">
+                <p>Hoy, <strong style="color: var(--primary-pink); font-size: 1.2rem;">CHOCOLICIUS</strong> es el reflejo de un sueño que sigue creciendo, de la resiliencia frente a los desafíos y de la certeza de que el chocolate no solo endulza el paladar, sino también el alma. Cada producto lleva detrás una historia de amor, esfuerzo y esperanza, con el deseo de compartir con cada persona la magia de un bocado inolvidable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECCIÓN CONTACTO
+         ============================================ -->
+    <section id="contacto" class="section-light">
+        <div class="container">
+            <h2>Contacto</h2>
+
+            <!-- Tarjetas de Contacto -->
+            <div class="contacto-grid">
+                <div class="contacto-card">
+                    <h3>📞 Teléfono</h3>
+                    <a href="tel:+543544407216">3544-407216</a>
+                    <p>Llamadas y WhatsApp</p>
+                </div>
+                <div class="contacto-card">
+                    <h3>📱 Instagram</h3>
+                    <a href="https://instagram.com/chocolicius_vd.oficial" target="_blank">@chocolicius_vd.oficial</a>
+                    <p>Síguenos en redes</p>
+                </div>
+                <div class="contacto-card">
+                    <h3>✉️ Email</h3>
+                    <a href="becerragarayvictoria@gmail.com" target="_blank">becerragarayvictoria@gmail.com</a>
+                    <p>Envíanos un mensaje</p>
+                    <p>Responderemos pronto</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CHOCOLICIUS</h3>
+                    <p>Emprendimiento de chocolates artesanales hecho con amor en Villa Dolores, Córdoba.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#talleres">Talleres</a></li>
+                        <li><a href="#historia">Nuestra Historia</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com/chocolicius_vd.oficial" target="_blank">📱</a>
+                        <a href="tel:+543544407216">📞</a>
+                        <a href="contacto">✉️</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 CHOCOLICIUS. Todos los derechos reservados. Hecho con amor en Villa Dolores, Córdoba.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         SCRIPTS
+         ============================================ -->
+    <script>
+        // Toggle menú mobile
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.remove('active');
+            });
+        });
+
+        // Scroll suave para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Agregar clase fade-in a elementos cuando entran en vista
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.producto-card, .servicio-item, .contacto-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Efecto Parallax para el video del hero
+        const heroVideo = document.getElementById('heroVideoBg');
+        const heroSection = document.getElementById('hero-video');
+        
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.pageYOffset;
+            const heroHeight = heroSection.offsetHeight;
+            
+            if (scrollPosition < heroHeight) {
+                const parallaxOffset = scrollPosition * 0.5;
+                heroVideo.style.transform = 'translateY(' + parallaxOffset + 'px)';
+            }
+        });
+    </script>
+    <a href="#" class="scroll-to-top-btn" id="scrollToTopBtn" aria-label="Volver arriba">
+        <img src="boton_hacia_arriba.jpg" alt="Volver arriba">
+    </a>
+
+    <script>
+        // Toggle menú mobile
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.remove('active');
+            });
+        });
+
+        // Scroll suave para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Agregar clase fade-in a elementos cuando entran en vista
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.producto-card, .servicio-item, .contacto-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Efecto Parallax para el video del hero
+        const heroVideo = document.getElementById('heroVideoBg');
+        const heroSection = document.getElementById('hero-video');
+        
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.pageYOffset;
+            const heroHeight = heroSection.offsetHeight;
+            
+            if (scrollPosition < heroHeight) {
+                const parallaxOffset = scrollPosition * 0.5;
+                heroVideo.style.transform = 'translateY(' + parallaxOffset + 'px)';
+            }
+        });
+
+        // LÓGICA PARA EL BOTÓN VOLVER ARRIBA (NUEVA LÓGICA)
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        const scrollThreshold = 400; // Distancia de scroll para mostrar el botón
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > scrollThreshold) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Desplaza la ventana al inicio con animación suave
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

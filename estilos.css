@@ -1,0 +1,824 @@
+/* ============================================
+   FUENTES IMPORTADAS
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* ============================================
+   VARIABLES CSS
+   ============================================ */
+:root {
+  --primary-pink: #e91e63;
+  --primary-gold: #d4af37;
+  --dark-pink: #c2185b;
+  --light-pink: #f48fb1;
+  --text-dark: #333333;
+  --text-light: #666666;
+  --bg-light: #f9f5f0;
+  --white: #ffffff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+   RESET Y ESTILOS GLOBALES
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Crimson Text', serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+  background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--primary-pink);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary-pink);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--dark-pink);
+}
+
+/* ============================================
+   CONTENEDOR Y LAYOUT
+   ============================================ */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+header {
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-text h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--primary-pink);
+}
+
+.logo-text p {
+  font-size: 0.75rem;
+  color: var(--primary-gold);
+  margin: 0;
+}
+
+/* Navegación Desktop */
+nav {
+  display: none;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+  }
+}
+
+nav a {
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary-pink);
+}
+
+/* Carrito y Menú Mobile */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-btn {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: var(--primary-pink);
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Menú Mobile */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+}
+
+.mobile-menu.active {
+  display: flex;
+}
+
+.mobile-menu a {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 10;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .hero-buttons {
+    flex-direction: row;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+  }
+}
+
+/* ============================================
+   BOTONES
+   ============================================ */
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: 'Crimson Text', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: var(--primary-pink);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-pink);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary-gold);
+  border: 2px solid var(--primary-gold);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-gold);
+  color: var(--text-dark);
+}
+
+/* ============================================
+   SECCIONES GENERALES
+   ============================================ */
+section {
+  padding: 4rem 0;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--primary-pink);
+}
+
+.section-light {
+  background-color: var(--bg-light);
+}
+
+/* ============================================
+   SECCIÓN PRODUCTOS
+   ============================================ */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.producto-card {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.producto-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+}
+
+.producto-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.producto-card:hover img {
+  transform: scale(1.05);
+}
+
+.producto-info {
+  padding: 1.5rem;
+}
+
+.producto-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.producto-info p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.producto-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.precio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary-gold);
+}
+
+.producto-card .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* ============================================
+   SECCIÓN SERVICIOS
+   ============================================ */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.video-container video {
+  max-width: 100%;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .servicios-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.servicio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicio-item h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.servicio-item img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 1.5rem;
+}
+
+.servicio-item p {
+  text-align: center;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.precio-animado {
+  color: var(--primary-gold);
+  font-weight: bold;
+  font-size: 1.1rem;
+  animation: goldPulse 2s infinite;
+}
+
+@keyframes goldPulse {
+  0%, 100% {
+    color: var(--primary-gold);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.precios-list {
+  background-color: #fce4ec;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.precios-list p {
+  margin: 0.5rem 0;
+}
+
+/* ============================================
+   SECCIÓN TALLERES
+   ============================================ */
+.talleres-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .talleres-content {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.talleres-text {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.talleres-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+.talleres-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.talleres-images img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease;
+}
+
+.talleres-images img:hover {
+  transform: scale(1.05);
+}
+
+/* ============================================
+   SECCIÓN NUESTRA HISTORIA
+   ============================================ */
+.historia-content {
+  position: relative;
+  line-height: 1.8;
+}
+
+.historia-content p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.historia-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-lg);
+  object-fit: cover;
+  margin: 1rem;
+}
+
+.historia-img-left {
+  float: left;
+}
+
+.historia-img-right {
+  float: right;
+}
+
+@media (max-width: 768px) {
+  .historia-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* ============================================
+   SECCIÓN CONTACTO
+   ============================================ */
+.contacto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contacto-card {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.contacto-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.contacto-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.contacto-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.contacto-card a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--primary-pink);
+}
+
+/* Formulario */
+.formulario {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formulario h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-family: 'Crimson Text', serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-pink);
+  box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.formulario .btn {
+  width: 100%;
+  text-align: center;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  padding: 3rem 0 1rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+  color: var(--primary-gold);
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  color: #aaa;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: var(--primary-gold);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-pink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: var(--dark-pink);
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 2rem;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* ============================================
+   UTILIDADES
+   ============================================ */
+.gold-text {
+  color: var(--primary-gold);
+}
+
+.pink-text {
+  color: var(--primary-pink);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .productos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .servicios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .historia-img {
+    width: 100%;
+    float: none;
+    margin: 1rem 0;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   ANIMACIONES
+   ============================================ */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: slideIn 0.5s ease-out;
+}
